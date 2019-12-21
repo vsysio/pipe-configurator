@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "184f1c42dc599533ce5dda2083c75ec1",
+    "content-hash": "146d9b970024e28f1455e191c1a6ccd2",
     "packages": [
+        {
+            "name": "brandongould/pipe-configurator-sourceredis",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vsysio/pipe-configurator-sourceredis.git",
+                "reference": "14748bdc015cec7d4797fcf7167832260d3842a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vsysio/pipe-configurator-sourceredis/zipball/14748bdc015cec7d4797fcf7167832260d3842a9",
+                "reference": "14748bdc015cec7d4797fcf7167832260d3842a9",
+                "shasum": ""
+            },
+            "require": {
+                "php-di/php-di": "^6.0",
+                "predis/predis": "^1.1"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pcredis\\": [
+                        "vendor/brandongould/pipe-configurator-sourceredis/src",
+                        "src/"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "BrandonGould",
+                    "email": "brandon@vsysio.net"
+                }
+            ],
+            "description": "Library used by pipe-configurator that sources configuration from Redis",
+            "support": {
+                "source": "https://github.com/vsysio/pipe-configurator-sourceredis/tree/develop",
+                "issues": "https://github.com/vsysio/pipe-configurator-sourceredis/issues"
+            },
+            "time": "2019-12-21T23:09:49+00:00"
+        },
         {
             "name": "jeremeamia/superclosure",
             "version": "2.4.0",
@@ -258,6 +304,56 @@
                 "reflection"
             ],
             "time": "2019-09-26T11:24:58+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/container",
@@ -1386,7 +1482,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "brandongould/pipe-configurator-sourceredis": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

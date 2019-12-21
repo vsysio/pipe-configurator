@@ -10,9 +10,21 @@
         }
     ],
     "require": {
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^6.0",
+        "brandongould/pipe-configurator-sourceredis": "dev-develop"
     },
     "require-dev": {
         "composer/composer": "^1.9"
+    },
+    "repositories": {
+        "pipe-configurator-sourceredis": {
+            "type": "vcs",
+            "url": "https://github.com/vsysio/pipe-configurator-sourceredis"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
     }
 }
