@@ -1,0 +1,18 @@
+{
+    "name": "brandongould/pipe-configurator",
+    "description": "This app enables an app that uses hardcoded configuration values to require() a named pipe created by this application. This named pipe will return a dynamically generated PHP file that exposes variables and constants set in Redis.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BrandonGould",
+            "email": "brandon@vsysio.net"
+        }
+    ],
+    "require": {
+        "php-di/php-di": "^6.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.9"
+    }
+}
